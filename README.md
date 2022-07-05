@@ -8,6 +8,13 @@ Palíndromo: frase ou palavra que se pode ler, indiferentemente, da esquerda par
 Primeiro verifiquei se a string existe, se ela era diferente de "true".  Utilizei  if(!string) return;
 Dessa verifico se a variável é null, Empty ou Undefined.
 
+//Solução 1
+function verificaPalindromo(string){
+    if(!string) return;
+
+    string.split("").reverse().join("") === string;
+}
+
 
 Atividade 2 - Troque todos os elementos pares e diferentes de zero de um array pelo número 0. Se o array for vazio, rendimento -1.
 
